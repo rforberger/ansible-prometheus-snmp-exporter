@@ -1,0 +1,16 @@
+---
+
+- name: install pkgs
+  ansible.builtin.apt:
+    name: "{{ packages }}"
+    state: present
+  vars:
+    packages:
+      - prometheus-snmp-exporter
+      - snmp-mibs-downloader
+
+
+
+
+
+
